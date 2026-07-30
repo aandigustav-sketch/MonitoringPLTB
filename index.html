@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring PLTB</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>MONITORING PEMBANGKIT LISTRIK TENAGA BANYU</h1>
+        <p>Realtime Monitoring Menggunakan Firebase Realtime Database</p>
+    </header>
+
+    <!-- INFORMASI -->
+    <div class="info">
+
+        <div class="info-box">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span id="tanggal">Tanggal</span>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-clock"></i>
+            <span id="jam">00:00:00</span>
+        </div>
+
+    </div>
+
+    <!-- CARD SENSOR -->
+    <div class="container">
+
+        <!-- Tegangan Generator -->
+        <div class="card">
+            <i class="fa-solid fa-bolt icon"></i>
+            <h2>Tegangan Generator</h2>
+            <p id="teganganGenerator">0 VAC</p>
+        </div>
+
+        <!-- Tegangan Baterai -->
+        <div class="card">
+            <i class="fa-solid fa-car-battery icon"></i>
+            <h2>Tegangan Baterai</h2>
+            <p id="teganganBaterai">0 VDC</p>
+        </div>
+
+        <!-- Arus Generator -->
+        <div class="card">
+            <i class="fa-solid fa-plug-circle-bolt icon"></i>
+            <h2>Arus Generator</h2>
+            <p id="arusGenerator">0 A</p>
+        </div>
+
+        <!-- Arus Beban -->
+        <div class="card">
+            <i class="fa-solid fa-lightbulb icon"></i>
+            <h2>Arus Beban</h2>
+            <p id="arusBeban">0 A</p>
+        </div>
+
+        <!-- RPM -->
+        <div class="card">
+            <i class="fa-solid fa-gauge-high icon"></i>
+            <h2>RPM</h2>
+            <p id="rpm">0 rpm</p>
+        </div>
+
+        <!-- Angin -->
+        <div class="card">
+            <i class="fa-solid fa-wind icon"></i>
+            <h2>Kecepatan Angin</h2>
+            <p id="angin">0 m/s</p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        Dashboard Monitoring PLTB © 2026
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
